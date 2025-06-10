@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DF Blog</title>
+    <link rel="icon" href="img/Logos/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <img
+        src="img/Logos/logoT.png"
+        class="header-image"
+        width="500"
+        height="150"
+      />
+      <h1 class="header-title">El Camino de un Técnico Diferente</h1>
+      <h2 class="header-sub-title">
+        📡🛠️ Un viaje real entre cables, código y convicción 💻🔥
+      </h2>
+    </header>
+
+    <main>
+      <select onchange="irASeccion(this)">
+        <option title="¿Quién Soy Yo?" value="quien-soy">
+          <li>🤵​ <a class="pasos">Quién Soy</a></li>
+        </option>
+        <option title="Del barrio al máster" value="comienzo">
+          <li>▶️​ <a class="pasos">Inicios</a></li>
+        </option>
+        <option title="Llamado de la programación " value="paso-3">
+          <li>💻​ <a class="pasos">Programación</a></li>
+        </option>
+        <option
+          title="Unir dos mundos"
+          value="dos-mundos"
+        >
+          <li>🌏 <a class="pasos">Dos mundos</a></li>
+        </option>
+        <option title="Ideas en realidad" value="paso-5">
+          <li>✔️​ <a class="pasos">Realidad</a></li>
+        </option>
+        <option value="conclusion">
+          <li>👇 <a href="#conclusion">Conclusión</a></li>
+        </option>
+      </select>
+
+      <section id="quien-soy">
+        <h2 class="secondary-title">¿Quién soy yo?</h2>
+
+        <div class="quien-soy-yo">
+          <div class="quien-soy-texto">
+            <p>
+              Mi nombre es <strong>Daniel F. Rincón Mendoza</strong>, un
+              apasionado por la tecnología, los procesos técnicos y el
+              desarrollo web. No vengo de grandes títulos ni de atajos, vengo
+              del trabajo duro, de aprender con las manos y de fallar hasta
+              entender. <br /><br />
+              Empecé mis estudios universitarios en Ingeniería de Sistemas, pero
+              por diferentes circunstancias, tuve que dejar la universidad
+              parcialmente. Y aunque no fue fácil, nunca perdí la chispa por
+              aprender, crear y superarme.
+              <br /><br />
+              Desde entonces, decidí convertirme en mi propio maestro. Amo
+              pensar, diseñar soluciones, conectar ideas y llevarlas a la
+              acción. Siempre me ha gustado lo técnico, lo práctico, lo que se
+              puede ver y tocar. Pero también me apasiona lo digital, lo lógico,
+              lo invisible que mueve lo visible.
+              <br /><br />
+              Me considero una persona determinada, con buen humor, enfoque y
+              visión. Me encanta combinar lo técnico con lo creativo, y tengo
+              una meta clara: desarrollar sistemas y soluciones que unan el
+              mundo físico con el digital.
+              <br /><br />
+              Este blog no es solo una página. Es un reflejo de mi historia, de
+              mi evolución, de mi forma de ver la vida. Y si estás leyendo esto,
+              quizás estés en una búsqueda parecida. Te invito a que sigas
+              leyendo… porque aquí comienza la transformación.
+            </p>
+          </div>
+
+          <div class="quien-soy-imagen">
+            <img
+              src="img/Fotos/resumen.png"
+              alt="Imagen de Daniel F. Rincón Mendoza"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="comienzo">
+        <h2 class="secondary-title">
+          “Del barrio al máster: así comenzó todo” 🚀​
+        </h2>
+
+        <h1 class="subtitulo">Comienzo</h1>
+        <div class="bloque-expandible">
+          <p class="texto-expandible">
+            Desde muy joven sentí una conexión profunda con todo lo relacionado
+            a las computadoras. No era solo curiosidad: era fascinación. Pasaba
+            horas editando fotos y videos, probando programas nuevos, instalando
+            videojuegos y explorando cada rincón de mi PC como quien explora un
+            universo propio. Los computadores ya eran parte del día a día, sí…
+            pero para mí eran algo más: una herramienta, un pasatiempo y una
+            puerta abierta a infinitas posibilidades. En ese entonces, lo usaba
+            tanto para el estudio como para el entretenimiento, pero también
+            empecé a sentir que algo más se movía ahí dentro: un interés genuino
+            por entender cómo funcionaban las cosas. Mi primer acercamiento
+            laboral vino en un pequeño local de soporte técnico. Ahí me sumergí
+            en tareas como instalación de programas, limpieza de equipos, venta
+            de repuestos… no era un trabajo formal ni de tiempo completo, porque
+            también estudiaba, pero sí fue mi primer campo de entrenamiento
+            real.
+          </p>
+          <img
+            src="img/Fotos/inicios.png"
+            class="imagen-expandible"
+            alt="Imagen de complemento"
+          />
+
+          <button class="boton-ver-mas">Ver más...</button>
+        </div>
+        <br /><br />
+
+        <h1 class="subtitulo">Obstáculos</h1>
+        <div class="bloque-expandible">
+          <p class="texto-expandible">
+            Los primeros años fueron un equilibrio complicado entre estudio,
+            trabajo y vida personal. Había incertidumbre, limitaciones y muchos
+            días sin descanso. Como era flexible, podía seguir estudiando, pero
+            eso también implicaba doble esfuerzo. No tener una estabilidad
+            completa no me detuvo, al contrario, me obligó a encontrar mi propio
+            ritmo, a desarrollar disciplina y persistencia desde temprano.
+            Cuando pasé a trabajar en una empresa local proveedora de internet,
+            surgieron nuevos desafíos: sí, dominaba bien el soporte técnico,
+            pero lo que realmente me llamaba la atención eran las instalaciones,
+            las configuraciones de equipos, los pequeños retos en campo. Y ahí,
+            aunque tenía que hacer de todo, yo buscaba perfección en lo mío. Era
+            obsesivo con el orden y con hacer las cosas bien. Pero el mayor
+            obstáculo llegó con el tiempo: sentí que ya no podía crecer más en
+            ese lugar. Aunque había aprendido muchísimo, llegó el momento en que
+            supe que, si quería avanzar, tenía que dejar lo cómodo y enfrentar
+            lo incierto. Y eso no es fácil: dejar atrás gente, zonas conocidas,
+            rutinas, incluso perder cosas y personas en el camino. Pero lo hice.
+            Me dolió, me formó… y me empujó al siguiente nivel.<br /><br />
+          </p>
+          <button class="boton-ver-mas">Ver más...</button>
+        </div>
+        <br /><br />
+
+        <h1 class="subtitulo">Escalando</h1>
+        <div class="bloque-expandible">
+          <p class="texto-expandible">
+            Con decisión, me lancé hacia una nueva ciudad y una empresa más
+            grande, especializada en Cableado Estructurado. Entré como técnico
+            auxiliar, sin conocer mucho del mundo que me esperaba. El equipo era
+            diverso y de alto nivel: técnicos de datos, electricistas,
+            brigadistas, rescatistas… y yo, con unas bases sólidas pero
+            humildes. No me achiqué. Sabía que el mundo tiene espacio para
+            quienes trabajan duro, y que si uno se obsesiona con hacer bien las
+            cosas, los resultados llegan. Aprendí rápido. Asimilé, observé,
+            pregunté, apliqué… y en poco tiempo ya no era solo “el nuevo”. Gané
+            la confianza de mis compañeros y el respeto de los líderes. Y cuando
+            me di cuenta, ya estaba ocupando el lugar de Técnico Máster.<br /><br />
+          </p>
+          <img
+            src="img/Fotos/cableadoredes.png"
+            class="imagen-expandible"
+            alt="Imagen de complemento"
+          />
+          <button class="boton-ver-mas">Ver más...</button>
+        </div>
+        <br /><br />
+
+        <h1 class="subtitulo">Logro y Enseñanza</h1>
+        <div class="bloque-expandible">
+          <p class="texto-expandible">
+            Cada etapa fue una prueba… y una escuela. Aprendí que la pasión no
+            basta: hay que meterle horas, disciplina y mucho corazón. Aprendí
+            que el talento te da impulso, pero el compromiso te lleva lejos.
+            Aprendí a ser ordenado, a pensar en grande, a no conformarme. Pero
+            sobre todo, aprendí que si quieres algo mejor, tienes que construirlo
+            con tus propias manos. Sin miedo. Sin excusas. Con coraje, con
+            sudor, y con la certeza de que ese esfuerzo es el camino correcto.
+            Hoy miro atrás y no me sorprendo. Porque siempre lo supe: todo lo
+            que uno imagina, se puede materializar. Solo hay que estar dispuesto
+            a pagar el precio, con trabajo, foco y determinación..<br /><br />
+          </p>
+          <button class="boton-ver-mas">Ver más...</button>
+        </div>
+        <br /><br />
+
+        <div class="cont-img-inicios">
+          <div class="img-inicios">
+            <h2>Descubriendo</h2>
+            <br />
+            <img
+              src="img/Fotos/inicios.png"
+              class="efecto"
+              width="400"
+              height="400"
+            />
+          </div>
+
+          <div class="img-inicios">
+            <h2>Primer trabajo</h2>
+            <br />
+            <img
+              src="img/Fotos/primertrabajo.png"
+              class="efecto"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="paso-3">
+        <h2 class="secondary-title">El llamado de la programación ​👨‍💻​</h2>
+        <br />
+        <p>
+          No fue amor a primera vista. Desde mis primeros años explorando la
+          computadora ya tenía pequeños roces con el mundo del código… sin
+          saberlo. Usaba un editor de texto, pero no para programar, sino para
+          modificar videojuegos y cambiar cosas como los textos, colores,
+          tipografías. Era divertido, sí, pero ni siquiera conocía la palabra
+          “programación”. La escuché por primera vez justo antes de ingresar a
+          la universidad, en esas entrevistas de admisión donde uno empieza a
+          ver nombres raros como “algoritmo”, “estructura de datos”, y ese tal
+          “lenguaje Java”. La verdad, elegí la carrera porque era la opción
+          tecnológica más accesible en ese momento y yo tenía un interés claro
+          por los computadores. Pero no tenía idea de lo que me estaba metiendo.
+          Era un adolescente confundido, como muchos en esa etapa, con un grupo
+          de amigos donde todos querían ser de todo.<br /><br />
+
+          Cuando empezaron las materias de fundamentos y lógica, sentí algo de
+          curiosidad. Pero esa curiosidad se convirtió en decepción. Nuestro
+          primer lenguaje fue Java, y lo vimos en un entorno llamado NetBeans.
+          Aquello me pareció una pesadilla de configuraciones y errores. Nada
+          fluía. Recuerdo pensar: “¿Así se hace un programa para un PC? ¿En
+          serio? ¡No tiene sentido!” La verdad, me desenamoré antes de conocerla
+          bien. De ahí en adelante, durante varios semestres, me enfoqué en
+          otras áreas que sí me daban satisfacción: soporte técnico,
+          instalaciones de programas, mantenimiento de equipos, redes… y dejé la
+          programación en pausa.
+        </p>
+
+        <div class="img-inicios">
+          <h2>Universidad</h2>
+          <br />
+          <img
+            src="img/Fotos/universidad.png"
+            class="efecto"
+            width="400"
+            height="400"
+          />
+        </div>
+        <br />
+        <p>
+          Pero el destino no había terminado conmigo. Ya en una nueva sede de la
+          universidad, con otro profesor y una nueva materia, llegó lo que
+          cambiaría todo: desarrollo web. No entendí nada al escuchar ese
+          nombre. Pero bastaron las primeras clases para que todo encajara: solo
+          con un editor de texto y un navegador podía ver resultados en tiempo
+          real. ¡Era mágico! HTML, CSS y JavaScript básico me abrieron la puerta
+          que tanto había buscado. Me dije: “¡Dios santo! ¿Por qué no vi esto
+          antes?” Por primera vez sentí que podía entender, avanzar, construir.
+          Lo que antes me parecía un lío, ahora tenía lógica, ritmo y propósito.
+          <br />
+
+          En ese momento yo ya estaba trabajando en campo, instalando servicios
+          de internet y redes. Aún no era técnico en cableado estructurado, pero
+          algo dentro de mí hizo clic. Entendí que podía unir mis dos pasiones:
+          las redes físicas y el desarrollo de sistemas. Algunos decían que ya
+          era tarde para aprender a programar. Incluso profesores me lo dijeron.
+          Que yo ya estaba “en otro camino”, que mejor me dedicara a lo que ya
+          sabía. Pero no les creí. Fue justo entonces cuando, por circunstancias
+          personales difíciles, dejé la universidad. Y lejos de rendirme, empecé
+          a aprender por mi cuenta. Aprendí las bases de varios lenguajes, bases
+          de datos, y comencé a crear sistemas pequeños, hechos a mano, pensados
+          para optimizar redes de datos y procesos reales en instalaciones.
+        </p>
+
+        <div class="img-inicios">
+          <h2>Programando</h2>
+          <br />
+          <img
+            src="img/Fotos/inicios_programacion2.png"
+            class="efecto"
+            width="400"
+            height="400"
+          />
+        </div>
+        <br />
+        <p>
+          Hoy puedo decir con orgullo que estoy uniendo lo técnico con lo
+          digital, lo físico con lo lógico. La programación no solo es parte de
+          mi vida: es la herramienta con la que le doy forma a mis ideas. Y sí,
+          sigo aprendiendo solo. Pero con convicción, con ganas, y con la
+          certeza de que sí se puede. Aquí estoy, y aquí voy. 💻🔌 Conectando
+          mundos, uniendo saberes.
+        </p>
+      </section>
+
+      <section id="dos-mundos">
+        <h2 class="secondary-title">El sueño de unir dos mundos 💻​👷🏾​</h2>
+        <br /><br />
+        <div class="img-inicios">
+          <img
+            src="img/Fotos/dos_mundos.png"
+            class="efecto img-dos-mundos"
+            alt="Imagen de dos mundos"
+            width="800"
+            height="1000"
+          />
+        </div>
+        <br />
+      </section>
+
+      <section id="paso-5">
+        <h2 class="secondary-title">Ideas que toman forma ✨​</h2>
+        <p>
+          Ha sido un camino desafiante, sí... pero también lleno de momentos
+          increíbles, aprendizajes y pasión. La verdad, nunca supe cómo iba a
+          llegar hasta aquí… pero siempre lo imaginé. Lo veía en mi mente, lo
+          sentía en el corazón. Todo parecía difícil, incluso imposible, pero
+          algo adentro me impulsaba. Hoy, mirando atrás, solo puedo sentir
+          gratitud. Soy libre, y eso no tiene precio. No existen los atajos. No
+          hay fórmulas mágicas ni trucos secretos. Hay decisiones. Hay acción.
+          Hay que proponerse un objetivo, visualizarlo con fuerza, programarlo y
+          actuar. Si lo puedes ver con claridad en tu mente, puedes construirlo
+          con tus manos. Pero hay que trabajar. Ser constante. Seguir aunque
+          duela. Y sobre todo, jamás permitir que alguien –ni siquiera tú mismo–
+          apague esa chispa que te impulsa. Al final, no tenemos nada que
+          perder… porque nada de lo que hay en este maravilloso mundo nos
+          pertenece para siempre.
+        </p>
+      </section>
+
+      <section id="conclusion">
+        <h2 class="secondary-title">Conclusión</h2>
+        <p>
+          Este blog no es solo para contar lo que he hecho. Es para recordarme –y
+          recordarte– que todos tenemos dentro la capacidad de transformar lo
+          que somos. No importa si estás en cero, si sientes que ya es tarde o
+          si el camino es confuso… Mientras haya intención, enfoque y acción:
+          hay chance de reescribir tu historia. Y eso es lo que pienso seguir
+          haciendo: uniendo saberes, ayudando a otros, creando soluciones desde
+          mi esencia… Porque apenas estamos comenzando.
+        </p>
+      </section>
+    </main>
+
+    <img
+      src="img/Logos/iD.png"
+      class=""
+      width="50"
+      height="50">
+
+
+      <footer class="footer-df">
+  <div class="footer-contenido">
+    <p class="footer-texto">
+      Daniel F. Rincón © 2025 —
+      <a href="https://idforce.com.co/" target="_blank" class="footer-link">iD-Force</a> — Todos los derechos reservados
+    </p>
+
+    <div class="redes-sociales">
+      <a href="https://github.com/daniF11" target="_blank">
+        <img src="img/iconos/github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/daniel-f-rinc%C3%B3n-mendoza-abb3aa20b/" target="_blank">
+        <img src="img/iconos/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://x.com/danyforce11" target="_blank">
+        <img src="img/iconos/x.png" alt="X (Twitter)" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- <footer>
+      <p>
+        Daniel F. Rincón © 2022 -
+        <a href="https://idforce.com.co/" class="link-pie">DF</a> - Todos los
+        derechos reservados
+        <div class="redes-sociales">
+          
+          <a href="https://github.com/daniF11" target="_blank">
+            <img src="img/iconos/github.png" alt="Twitter">
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-f-rinc%C3%B3n-mendoza-abb3aa20b/" target="_blank">
+            <img src="img/iconos/linkedin.png" alt="Instagram">
+          </a>
+           <a href="https://x.com/danyforce11" target="_blank">
+            <img src="img/iconos/x.png" alt="Instagram">
+          </a>
+          
+        </div>
+      </p>
+    </footer> -->
+
+    <script src="js/codigo.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+  </body>
+</html>

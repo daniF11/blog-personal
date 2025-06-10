@@ -1,2 +1,2 @@
 # blog-personal
-Mi blog
+Blog en desarrollo sobre mi historia y progreso
